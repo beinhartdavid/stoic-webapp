@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+
+
+
+</head>
+
+
+<body>
+
+{% if text %}
+        <h0>{{ text[0] }}</h0>
+    {% endif %}
+
+{% if text %}
+        <h1> {{ text[1] }}</h1>
+    {% endif %}
+
+{% if text %}
+        <h2>{{ text[2] }}</h2>
+    {% endif %}
+
+{% if text %}
+        <h3>{{ text[3] }}</h3>
+    {% endif %}
+
+{% if text %}
+        <h4>{{ text[4][:100]+ "...for more checkout The Daily Stoic by Ryan Holiday"}}</h4>
+    {% endif %}
+
+
+</body>
+</html>
